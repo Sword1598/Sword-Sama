@@ -1,0 +1,57 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    background-color: red;
+}
+img{
+    height: 80px;
+    width: 483px;
+}
+div{
+    position: relative;
+}
+.ketab{
+    position: absolute;
+    top: -8px;
+    animation-name: anime2;
+    animation-direction: alternate;
+    animation-duration: 0.9s;
+    display: flex;
+    width: 483px;
+    height: 309px;
+}
+
+.Book{
+    position: absolute;
+    animation-name: anime;
+    animation-direction: alternate;
+    animation-duration: 0.9s;
+    top: 95px;
+    display: inherit;
+    width: 487px;
+    height: 67px;
+    left: -2px;
+}
+
+@keyframes anime{
+    0%{
+        transform: translateY(-50px);
+        -webkit-transform: translateY(-50px);
+        -moz-transform: translateY(-50px);
+        -ms-transform: translateY(-50px);
+        -o-transform: translateY(-50px);
+}
+}
+
+@keyframes anime2{
+    0%{
+        transform: translateY(100px);
+        -webkit-transform: translateY(100px);
+        -moz-transform: translateY(100px);
+        -ms-transform: translateY(100px);
+        -o-transform: translateY(100px);
+}
+}
